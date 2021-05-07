@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="main_container">
+           <div class="logo_container"></div>
+           <nav>
+               <a href="#">HOME</a>
+               <a href="#">ABOUT</a>
+               <a href="#">CONTACT</a>
+           </nav>   
+        </div>
+    </header>
+
+
+    <div class="main" ng-app="myTodoList" ng-controller="myCtrl" >
+    
+      <input type="text" id="myInput" placeholder="Enter your task..." ng-model="addMe">
+      <button ng-click="addTaskToTodoList()" class="addBtn">SEND</button>
+      <ul id="myUl">
+          <li ng-repeat="x in tasks" >{{x}}<button ng-click="removeTask($index)" class="close">x</button> </li>
+      </ul>
+
+    </div>
+    <script type="text/javascript">
+    var app=angular.module("myTodoList",[])
+    app.controller("myCtrl",function($scope){
+        $scope.tasks=[]
+       $scope.addTaskToTodoList=function(){
+        
+          if(!$scope.addMe) {return};
+          if($scope.tasks.indexOf($scope.addMe) == -1){
+              $scope.tasks.push($scope.addMe);
+             this.add='';
+          }
+
+       }
+       $scope.removeTask=function(x){
+          $scope.tasks.splice(x,1);
+       }
+    });
+
+    
+    
+    </script>
+</body>
+
+</html>

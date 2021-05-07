@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*::---HEADER--::*/
+*{
+    outline: none;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+header{
+    background-color:black;
+    height: 60px;
+}
+.main_container{
+    width: 1100px;
+    margin: auto;
+}
+.logo_container{
+    width: 163px;
+    height: 45px;
+    background: url(../images/logo_CoRover-163x45.png)no-repeat;
+    background-size: cover;
+    float: left;
+    margin-top: 8px;
+    
+}
+nav{
+    
+    float: right;
+    
+    
+}
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    float: left;
+}
+input{
+    margin-top: 90px;
+    margin-left: 80px;
+    padding: 20px;
+   
+    border: none;
+    width: 75%;
+    float: left;
+    font-size: 16px;
+    background-color: floralwhite;
+}
+.addBtn{
+     margin-top: 90px;
+    margin-left: 2px;
+    padding: 20px;
+   
+    cursor: pointer;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 0;
+   
+}
+ul{
+    margin: 10px;
+    padding: 0px;
+   
+    
+}
+ul li{
+    float: left;
+    margin-right: 67%;
+    margin-left: 82px;
+    margin-top: 48px;
+    font-size: 20px;
+    background: #eee;
+    width: 50%;
+    position: relative;
+    padding: 10px 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
+}
+.close{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background: #595959;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #595959;
+}
